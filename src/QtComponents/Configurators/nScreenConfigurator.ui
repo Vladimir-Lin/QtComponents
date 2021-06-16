@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>nScreenConfigurator</class>
+ <widget class="QWidget" name="nScreenConfigurator">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>320</width>
+    <height>320</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Screen configurator</string>
+  </property>
+  <widget class="QToolButton" name="Apply">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>280</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Apply</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="WidthPixel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>280</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="suffix">
+    <string> pixels</string>
+   </property>
+   <property name="prefix">
+    <string>Width : </string>
+   </property>
+   <property name="maximum">
+    <number>999999999</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="WidthMM">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>120</y>
+     <width>280</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="suffix">
+    <string> mm</string>
+   </property>
+   <property name="prefix">
+    <string>Width : </string>
+   </property>
+   <property name="maximum">
+    <number>999999</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="HeightPixel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>160</y>
+     <width>280</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="suffix">
+    <string> mm</string>
+   </property>
+   <property name="prefix">
+    <string>Height : </string>
+   </property>
+   <property name="maximum">
+    <number>999999999</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="HeightMM">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>200</y>
+     <width>280</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="suffix">
+    <string> mm</string>
+   </property>
+   <property name="prefix">
+    <string>Height : </string>
+   </property>
+   <property name="maximum">
+    <number>999999</number>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="Measure">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>260</y>
+     <width>280</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Measure</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Apply</sender>
+   <signal>clicked()</signal>
+   <receiver>nScreenConfigurator</receiver>
+   <slot>Apply()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>159</x>
+     <y>35</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>159</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Measure</sender>
+   <signal>clicked()</signal>
+   <receiver>nScreenConfigurator</receiver>
+   <slot>Measure()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>159</x>
+     <y>275</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>159</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>HeightMM</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>nScreenConfigurator</receiver>
+   <slot>Changed(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>159</x>
+     <y>215</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>159</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>HeightPixel</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>nScreenConfigurator</receiver>
+   <slot>Changed(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>159</x>
+     <y>175</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>159</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>WidthMM</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>nScreenConfigurator</receiver>
+   <slot>Changed(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>159</x>
+     <y>135</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>159</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>WidthPixel</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>nScreenConfigurator</receiver>
+   <slot>Changed(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>159</x>
+     <y>93</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>159</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

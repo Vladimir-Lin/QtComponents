@@ -1,0 +1,10 @@
+SOURCES += $${PWD}/nAbstractGui.cpp
+SOURCES += $${PWD}/nVirtualGui.cpp
+SOURCES += $${PWD}/nAttachDock.cpp
+SOURCES += $${PWD}/nMenuManager.cpp
+SOURCES += $${PWD}/nScopedProgress.cpp
+SOURCES += $${PWD}/nGraphicsManager.cpp
+SOURCES += $${PWD}/nGroupItems.cpp
+SOURCES += $${PWD}/nFileDeputy.cpp
+SOURCES += $${PWD}/nDataRetriever.cpp
+SOURCES += $${PWD}/nGeneralDispatcher.cpp

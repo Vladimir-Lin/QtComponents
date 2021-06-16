@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CtrlPadSize</class>
+ <widget class="QWidget" name="CtrlPadSize">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>160</width>
+    <height>100</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Size Editor</string>
+  </property>
+  <widget class="QSpinBox" name="W">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>120</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="suffix">
+    <string/>
+   </property>
+   <property name="prefix">
+    <string>Width : </string>
+   </property>
+   <property name="minimum">
+    <number>-999999999</number>
+   </property>
+   <property name="maximum">
+    <number>999999999</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="H">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>120</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="prefix">
+    <string>Height : </string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>W</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>CtrlPadSize</receiver>
+   <slot>ValueChanged(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>79</x>
+     <y>31</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>79</x>
+     <y>49</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>H</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>CtrlPadSize</receiver>
+   <slot>ValueChanged(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>79</x>
+     <y>71</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>79</x>
+     <y>49</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

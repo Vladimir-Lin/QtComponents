@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CtrlPadRectF</class>
+ <widget class="QWidget" name="CtrlPadRectF">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>160</width>
+    <height>180</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Double Rectangle Editor</string>
+  </property>
+  <widget class="QDoubleSpinBox" name="X">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>120</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="prefix">
+    <string>X : </string>
+   </property>
+   <property name="decimals">
+    <number>3</number>
+   </property>
+   <property name="minimum">
+    <double>-999999999.990000009536743</double>
+   </property>
+   <property name="maximum">
+    <double>999999999.990000009536743</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="Y">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>120</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="prefix">
+    <string>Y : </string>
+   </property>
+   <property name="decimals">
+    <number>3</number>
+   </property>
+   <property name="minimum">
+    <double>-999999999.990000009536743</double>
+   </property>
+   <property name="maximum">
+    <double>999999999.990000009536743</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="W">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>120</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="prefix">
+    <string>W : </string>
+   </property>
+   <property name="decimals">
+    <number>3</number>
+   </property>
+   <property name="minimum">
+    <double>-999999999.990000009536743</double>
+   </property>
+   <property name="maximum">
+    <double>999999999.990000009536743</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="H">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>120</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="prefix">
+    <string>H : </string>
+   </property>
+   <property name="decimals">
+    <number>3</number>
+   </property>
+   <property name="minimum">
+    <double>-999999999.990000009536743</double>
+   </property>
+   <property name="maximum">
+    <double>999999999.990000009536743</double>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>X</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>CtrlPadRectF</receiver>
+   <slot>ValueChanged(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>79</x>
+     <y>31</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>79</x>
+     <y>89</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Y</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>CtrlPadRectF</receiver>
+   <slot>ValueChanged(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>79</x>
+     <y>71</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>79</x>
+     <y>89</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>W</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>CtrlPadRectF</receiver>
+   <slot>ValueChanged(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>79</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>79</x>
+     <y>89</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>H</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>CtrlPadRectF</receiver>
+   <slot>ValueChanged(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>79</x>
+     <y>151</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>79</x>
+     <y>89</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

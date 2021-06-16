@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>nFontSelector</class>
+ <widget class="QWidget" name="nFontSelector">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>560</width>
+    <height>380</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1666666</width>
+    <height>1666666</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Font selector</string>
+  </property>
+  <property name="toolTip">
+   <string>Font selector</string>
+  </property>
+  <property name="statusTip">
+   <string>Font selector</string>
+  </property>
+  <property name="whatsThis">
+   <string>Font selector</string>
+  </property>
+  <widget class="QFontComboBox" name="Fonts">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>400</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="Size">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>60</y>
+     <width>100</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="suffix">
+    <string> cm</string>
+   </property>
+   <property name="maximum">
+    <double>9999.989999999999782</double>
+   </property>
+   <property name="singleStep">
+    <double>0.010000000000000</double>
+   </property>
+   <property name="value">
+    <double>0.400000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Name">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>20</y>
+     <width>400</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Name</string>
+   </property>
+   <property name="statusTip">
+    <string>Name</string>
+   </property>
+   <property name="whatsThis">
+    <string>Name</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Done">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>100</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Done</string>
+   </property>
+   <property name="statusTip">
+    <string>Done</string>
+   </property>
+   <property name="whatsThis">
+    <string>Done</string>
+   </property>
+   <property name="text">
+    <string>Done</string>
+   </property>
+   <property name="autoDefault">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="FixedPitch">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>120</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Fixed pitch</string>
+   </property>
+   <property name="statusTip">
+    <string>Fixed pitch</string>
+   </property>
+   <property name="whatsThis">
+    <string>Fixed pitch</string>
+   </property>
+   <property name="text">
+    <string>Fixed pitch</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="Bold">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>120</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Bold</string>
+   </property>
+   <property name="statusTip">
+    <string>Bold</string>
+   </property>
+   <property name="whatsThis">
+    <string>Bold</string>
+   </property>
+   <property name="text">
+    <string>Bold</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="Italic">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>180</y>
+     <width>120</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Italic</string>
+   </property>
+   <property name="statusTip">
+    <string>Italic</string>
+   </property>
+   <property name="whatsThis">
+    <string>Italic</string>
+   </property>
+   <property name="text">
+    <string>Italic</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="Kerning">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>220</y>
+     <width>120</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Kerning</string>
+   </property>
+   <property name="statusTip">
+    <string>Kerning</string>
+   </property>
+   <property name="whatsThis">
+    <string>Kerning</string>
+   </property>
+   <property name="text">
+    <string>Kerning</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="Overline">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>260</y>
+     <width>120</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Overline</string>
+   </property>
+   <property name="statusTip">
+    <string>Overline</string>
+   </property>
+   <property name="whatsThis">
+    <string>Overline</string>
+   </property>
+   <property name="text">
+    <string>Overline</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="StrikeOut">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>300</y>
+     <width>85</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Strike out</string>
+   </property>
+   <property name="statusTip">
+    <string>Strike out</string>
+   </property>
+   <property name="whatsThis">
+    <string>Strike out</string>
+   </property>
+   <property name="text">
+    <string>Strike out</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="Underline">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>340</y>
+     <width>120</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Underline</string>
+   </property>
+   <property name="statusTip">
+    <string>Underline</string>
+   </property>
+   <property name="whatsThis">
+    <string>Underline</string>
+   </property>
+   <property name="text">
+    <string>Underline</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="WordSpacing">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>100</y>
+     <width>100</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Word spacing</string>
+   </property>
+   <property name="statusTip">
+    <string>Word spacing</string>
+   </property>
+   <property name="whatsThis">
+    <string>Word spacing</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="maximum">
+    <double>9999.989999999999782</double>
+   </property>
+   <property name="singleStep">
+    <double>0.100000000000000</double>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="Weight">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>100</y>
+     <width>120</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Weight</string>
+   </property>
+   <property name="statusTip">
+    <string>Weight</string>
+   </property>
+   <property name="whatsThis">
+    <string>Weight</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="maximum">
+    <number>9999</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="Stretch">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>100</y>
+     <width>120</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Stretch</string>
+   </property>
+   <property name="statusTip">
+    <string>Stretch</string>
+   </property>
+   <property name="whatsThis">
+    <string>Stretch</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="maximum">
+    <number>9999</number>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="Text">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>140</y>
+     <width>380</width>
+     <height>220</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Text</string>
+   </property>
+   <property name="statusTip">
+    <string>Text</string>
+   </property>
+   <property name="whatsThis">
+    <string>Text</string>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'PMingLiU'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Sample text&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;0123456789&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;ABCDEFGHIJKLMNOPQRSTUVWXYZ&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;abcdefghijklmnopqrstuvwxyz&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Done</sender>
+   <signal>clicked()</signal>
+   <receiver>nFontSelector</receiver>
+   <slot>Done()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>69</x>
+     <y>31</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>239</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>FixedPitch</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>nFontSelector</receiver>
+   <slot>valueChanged(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>79</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>279</x>
+     <y>189</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Bold</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>nFontSelector</receiver>
+   <slot>valueChanged(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>79</x>
+     <y>151</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>279</x>
+     <y>189</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Italic</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>nFontSelector</receiver>
+   <slot>valueChanged(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>79</x>
+     <y>191</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>279</x>
+     <y>189</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Kerning</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>nFontSelector</receiver>
+   <slot>valueChanged(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>79</x>
+     <y>231</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>279</x>
+     <y>189</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Overline</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>nFontSelector</receiver>
+   <slot>valueChanged(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>79</x>
+     <y>271</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>279</x>
+     <y>189</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>StrikeOut</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>nFontSelector</receiver>
+   <slot>valueChanged(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>62</x>
+     <y>309</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>279</x>
+     <y>189</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Underline</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>nFontSelector</receiver>
+   <slot>valueChanged(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>79</x>
+     <y>351</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>279</x>
+     <y>189</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Fonts</sender>
+   <signal>currentFontChanged(QFont)</signal>
+   <receiver>nFontSelector</receiver>
+   <slot>FontChanged(QFont)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>219</x>
+     <y>71</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>279</x>
+     <y>189</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Size</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>nFontSelector</receiver>
+   <slot>doubleChanged(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>489</x>
+     <y>71</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>279</x>
+     <y>189</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Stretch</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>nFontSelector</receiver>
+   <slot>valueChanged(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>219</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>279</x>
+     <y>189</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Weight</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>nFontSelector</receiver>
+   <slot>valueChanged(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>359</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>279</x>
+     <y>189</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>WordSpacing</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>nFontSelector</receiver>
+   <slot>doubleChanged(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>489</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>279</x>
+     <y>189</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Name</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>nFontSelector</receiver>
+   <slot>NameChanged(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>339</x>
+     <y>31</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>279</x>
+     <y>189</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

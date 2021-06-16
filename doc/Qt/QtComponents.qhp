@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+    <namespace>com.neutrino.qtcomponents</namespace>
+    <virtualFolder>QtComponents</virtualFolder>
+    <customFilter name="CIOS Components 1.6.0">
+        <filterAttribute>CIOS Components</filterAttribute>
+        <filterAttribute>1.6.0</filterAttribute>
+    </customFilter>
+    <filterSection>
+        <filterAttribute>CIOS Components</filterAttribute>
+        <filterAttribute>1.6.0</filterAttribute>
+        <toc>
+            <section title="CIOS Components Manual" ref="index.html">
+                <section title="English" ref="en/index.html"/>
+                <section title="Traditional Chinese" ref="tw/index.html"/>
+                <section title="Simplified Chinese" ref="cn/index.html"/>
+            </section>
+        </toc>
+        <keywords>
+            <keyword name="Components（正體中文）" id="CIOS::ComponentsTW" ref="tw/index.html"/>
+            <keyword name="QtComponent Classes（正體中文）" id="CIOS::QtComponentClassesTW" ref="tw/Classes.html"/>
+            <keyword name="Basic VCFs（正體中文）" id="CIOS::BasicVcfTW" ref="tw/VCFs.html"/>
+            <keyword name="Basic Widgets（正體中文）" id="CIOS::BasicWidgetsTW" ref="tw/Widgets.html"/>
+            <keyword name="SystemPlan（正體中文）" id="CIOS::SystemPlanTW" ref="tw/SystemPlan.html"/>
+            <keyword name="ScriptPlan（正體中文）" id="CIOS::ScriptPlanTW" ref="tw/ScriptPlan.html"/>
+            <keyword name="AbstractGui（正體中文）" id="CIOS::AbstractGuiTW" ref="tw/AbstractGui.html"/>
+            <keyword name="VirtualGui（正體中文）" id="CIOS::VirtualGuiTW" ref="tw/VirtualGui.html"/>
+            <keyword name="AttacheDock（正體中文）" id="CIOS::AttacheDockTW" ref="tw/AttacheDock.html"/>
+        </keywords>
+        <files>
+            <file>*.css</file>
+            <file>*.html</file>
+            <file>images/*</file>
+            <file>tw/*</file>
+            <file>en/*</file>
+            <file>cn/*</file>
+        </files>
+    </filterSection>
+</QtHelpProject>
